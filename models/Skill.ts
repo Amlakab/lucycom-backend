@@ -1,6 +1,15 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
 export enum SkillCategory {
+  TELECOM = 'telecom',
+  DATACENTER = 'datacenter',
+  SECURITY = 'security',
+  CYBERSECURITY = 'cybersecurity',
+  EDUCATION = 'education',
+  POWER = 'power',
+  NETWORKING = 'networking',
+  CONSULTANCY = 'consultancy',
+  // Legacy compatibility fallbacks
   FRONTEND = 'frontend',
   BACKEND = 'backend',
   DESIGN = 'design',

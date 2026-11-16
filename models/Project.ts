@@ -5,13 +5,9 @@ export enum ProjectCategory {
   DATACENTER = 'datacenter',
   EDUCATION = 'education',
   SECURITY = 'security',
+  CYBERSECURITY = 'cybersecurity',
   POWER = 'power',
   CONSULTANCY = 'consultancy',
-  // Legacy compatibility fallbacks
-  WEB = 'web',
-  MOBILE = 'mobile',
-  DESIGN = 'design',
-  FULLSTACK = 'fullstack'
 }
 
 export interface IProject extends Document {

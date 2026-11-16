@@ -13,11 +13,7 @@ export interface ICertification extends Document {
     contentType: string;
     fileName: string;
   };
-  category: 'Academic Credentials & Transcripts' | 
-            'Technical & Skill-Based Certifications' | 
-            'Extracurricular, Volunteer & Community Involvement' | 
-            'Professional Development & Short Courses' | 
-            'Honors, Awards & Recognition';
+  category: string;
   credentialId?: string;
   credentialUrl?: string;
   featured: boolean;
@@ -42,6 +38,12 @@ const CertificationSchema = new Schema<ICertification>(
       type: String, 
       required: true, 
       enum: [
+        'ECA Regulatory & Telecom Contractor Licenses',
+        'EEA Electromechanical & Power Competency (Grade-5)',
+        'Commercial Trade & Engineering Licenses',
+        'Federal Import & Distribution Accreditations',
+        'OEM Partner Accreditations & ISO Compliance',
+        'Consultancy & Professional Engineering Accreditations',
         'Academic Credentials & Transcripts',
         'Technical & Skill-Based Certifications',
         'Extracurricular, Volunteer & Community Involvement',

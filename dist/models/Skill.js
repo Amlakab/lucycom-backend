@@ -37,6 +37,15 @@ exports.SkillCategory = void 0;
 const mongoose_1 = __importStar(require("mongoose"));
 var SkillCategory;
 (function (SkillCategory) {
+    SkillCategory["TELECOM"] = "telecom";
+    SkillCategory["DATACENTER"] = "datacenter";
+    SkillCategory["SECURITY"] = "security";
+    SkillCategory["CYBERSECURITY"] = "cybersecurity";
+    SkillCategory["EDUCATION"] = "education";
+    SkillCategory["POWER"] = "power";
+    SkillCategory["NETWORKING"] = "networking";
+    SkillCategory["CONSULTANCY"] = "consultancy";
+    // Legacy compatibility fallbacks
     SkillCategory["FRONTEND"] = "frontend";
     SkillCategory["BACKEND"] = "backend";
     SkillCategory["DESIGN"] = "design";

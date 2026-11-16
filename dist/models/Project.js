@@ -41,13 +41,9 @@ var ProjectCategory;
     ProjectCategory["DATACENTER"] = "datacenter";
     ProjectCategory["EDUCATION"] = "education";
     ProjectCategory["SECURITY"] = "security";
+    ProjectCategory["CYBERSECURITY"] = "cybersecurity";
     ProjectCategory["POWER"] = "power";
     ProjectCategory["CONSULTANCY"] = "consultancy";
-    // Legacy compatibility fallbacks
-    ProjectCategory["WEB"] = "web";
-    ProjectCategory["MOBILE"] = "mobile";
-    ProjectCategory["DESIGN"] = "design";
-    ProjectCategory["FULLSTACK"] = "fullstack";
 })(ProjectCategory || (exports.ProjectCategory = ProjectCategory = {}));
 const ProjectSchema = new mongoose_1.Schema({
     title: { type: String, required: true, trim: true },

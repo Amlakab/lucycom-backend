@@ -51,6 +51,12 @@ const CertificationSchema = new mongoose_1.Schema({
         type: String,
         required: true,
         enum: [
+            'ECA Regulatory & Telecom Contractor Licenses',
+            'EEA Electromechanical & Power Competency (Grade-5)',
+            'Commercial Trade & Engineering Licenses',
+            'Federal Import & Distribution Accreditations',
+            'OEM Partner Accreditations & ISO Compliance',
+            'Consultancy & Professional Engineering Accreditations',
             'Academic Credentials & Transcripts',
             'Technical & Skill-Based Certifications',
             'Extracurricular, Volunteer & Community Involvement',
