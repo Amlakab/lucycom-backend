@@ -39,8 +39,8 @@ const SiteSettingsSchema = new mongoose_1.Schema({
         name: { type: String, default: 'LUCYCOM TECHNOLOGIES S.C.' },
         slogan: { type: String, default: 'Lucy the origin, LucyCom the destination' },
         sloganAmharic: { type: String, default: 'ሉሲ መገኛ፣ ሉሲኮም መዳረሻ' },
-        tin: { type: String, default: '0072480301' },
-        capital: { type: String, default: '2,360,000.00 ETB' },
+        tin: { type: String, default: '' },
+        capital: { type: String, default: '' },
         registrationNo: { type: String, default: 'AACATB/14/672/50644211/2019' },
         profileBrochureUrl: { type: String, default: '/documents/LUCYCOM_Company_Profile.pdf' }
     },
@@ -270,8 +270,8 @@ SiteSettingsSchema.static('getSettings', async function () {
                 name: 'LUCYCOM TECHNOLOGIES S.C.',
                 slogan: 'Lucy the origin, LucyCom the destination',
                 sloganAmharic: 'ሉሲ መገኛ፣ ሉሲኮም መዳረሻ',
-                tin: '0072480301',
-                capital: '2,360,000.00 ETB',
+                tin: '',
+                capital: '',
                 registrationNo: 'AACATB/14/672/50644211/2019',
                 profileBrochureUrl: '/documents/LUCYCOM_Company_Profile.pdf'
             },

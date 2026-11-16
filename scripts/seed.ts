@@ -29,8 +29,8 @@ export async function seedDatabase() {
       name: 'LUCYCOM TECHNOLOGIES S.C.',
       slogan: 'Lucy the origin, LucyCom the destination',
       sloganAmharic: 'ሉሲ መገኛ፣ ሉሲኮም መዳረሻ',
-      tin: '0072480301',
-      capital: '2,360,000.00 ETB',
+      tin: '',
+      capital: '',
       registrationNo: 'AACATB/14/672/50644211/2019',
       profileBrochureUrl: '/documents/LUCYCOM_Company_Profile.pdf'
     },

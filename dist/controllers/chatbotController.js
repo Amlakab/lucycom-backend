@@ -43,8 +43,8 @@ const handleChatbotQuery = async (req, res) => {
             q.includes('company profile') || q.includes('who are you') || q.includes('motto') || q.includes('slogan') ||
             q.includes('ስለ ሉሲኮም') || q.includes('ሉሲኮም ማን ነው') || q.includes('ስለ ኩባንያው') || q.includes('መፈክር')) {
             const text = language === 'am'
-                ? 'ሉሲኮም ቴክኖሎጂስ አ.ማ በኢትዮጵያ ዓለም አቀፍ ደረጃቸውን የጠበቁ የICT፣ የቴሌኮም እና የዳታ ሴንተር መሰረተ-ልማቶችን በመንደፍ፣ በማቅረብና በመገንባት ላይ የተሰማራ ቀዳሚ የአክሲዮን ማህበር ነው።\n• መፈክር፦ «ሉሲ መገኛ፣ ሉሲኮም መዳረሻ»\n• ካፒታል፦ 2,360,000.00 ብር\n• TIN፦ 0072480301\n• ዋና መስሪያ ቤት፦ አዲስ አበባ፣ የካ ክፍለ ከተማ፣ ወረዳ 08፣ የቤት ቁጥር 158/406'
-                : 'LUCYCOM TECHNOLOGIES S.C. is a premier Ethiopian share company dedicated to designing, supplying, building, and maintaining carrier-grade ICT, telecom, and data center infrastructure.\n• Motto: "Lucy the origin, LucyCom the destination"\n• Share Capital: 2,360,000.00 ETB\n• TIN: 0072480301\n• Headquarters: Yeka Sub-City, Woreda 08, House No. 158/406, Addis Ababa, Ethiopia.';
+                ? 'ሉሲኮም ቴክኖሎጂስ አ.ማ በኢትዮጵያ ዓለም አቀፍ ደረጃቸውን የጠበቁ የICT፣ የቴሌኮም እና የዳታ ሴንተር መሰረተ-ልማቶችን በመንደፍ፣ በማቅረብና በመገንባት ላይ የተሰማራ ቀዳሚ የአክሲዮን ማህበር ነው።\n• መፈክር፦ «ሉሲ መገኛ፣ ሉሲኮም መዳረሻ»\n• የድርጅት አይነት፦ የአክሲዮን ማህበር (S.C.)\n• ዋና መስሪያ ቤት፦ አዲስ አበባ፣ የካ ክፍለ ከተማ፣ ወረዳ 08፣ የቤት ቁጥር 158/406'
+                : 'LUCYCOM TECHNOLOGIES S.C. is a premier Ethiopian share company dedicated to designing, supplying, building, and maintaining carrier-grade ICT, telecom, and data center infrastructure.\n• Motto: "Lucy the origin, LucyCom the destination"\n• Entity Type: Registered Share Company (S.C.)\n• Headquarters: Yeka Sub-City, Woreda 08, House No. 158/406, Addis Ababa, Ethiopia.';
             return res.json({ reply: text, topic: 'about' });
         }
         // 5. Telecom
@@ -89,8 +89,8 @@ const handleChatbotQuery = async (req, res) => {
             q.includes('eca') || q.includes('eea') || q.includes('proclamation') ||
             q.includes('ፈቃድ') || q.includes('ምስክር') || q.includes('ህጋዊ') || q.includes('ቲን')) {
             const text = language === 'am'
-                ? 'ህጋዊ ምዝገባዎች እና ይፋዊ ፈቃዶች፦\n1. የኢትዮጵያ ኮሙኒኬሽን ባለስልጣን (ECA) የውጭ ቴሌኮም ተከላና ጥገና ፈቃድ (አዋጅ 1148/2011)\n2. የኢትዮጵያ ኤነርጂ ባለስልጣን (EEA) የኤሌክትሮሜካኒካል ተቋራጭ ደረጃ-5 ፈቃድ (አዋጅ 686/2002)\n3. የአዲስ አበባ ንግድ ቢሮ ፈቃዶች (የኔትወርክ ዲዛይን፣ የICT ማማከር፣ የሶፍትዌር ልማት)\n4. የንግድ ሚኒስቴር የኮሙኒኬሽን እቃዎች አስመጪነት ፈቃድ\n• TIN: 0072480301 | ካፒታል: 2,360,000.00 ብር'
-                : 'Official Licenses & Accreditations:\n1. Ethiopian Communications Authority (ECA) Outdoor Telecom Installation & Maintenance License (Proclamation 1148/2019)\n2. Ethiopian Energy Authority (EEA) Electromechanical Contractor Grade-Five Competency Certificate (Proclamation 686/2010)\n3. Trade Bureau Licenses: Computer Network Design (Code 85121), ICT Consultancy (Code 86521), Software Development (Code 39141)\n4. Ministry of Trade: Telecom & Hardware Importation License\n• TIN: 0072480301 | Share Capital: 2,360,000.00 ETB';
+                ? 'ህጋዊ ምዝገባዎች እና ይፋዊ ፈቃዶች፦\n1. የኢትዮጵያ ኮሙኒኬሽን ባለስልጣን (ECA) የውጭ ቴሌኮም ተከላና ጥገና ፈቃድ (አዋጅ 1148/2011)\n2. የኢትዮጵያ ኤነርጂ ባለስልጣን (EEA) የኤሌክትሮሜካኒካል ተቋራጭ ደረጃ-5 ፈቃድ (አዋጅ 686/2002)\n3. የአዲስ አበባ ንግድ ቢሮ ፈቃዶች (የኔትወርክ ዲዛይን፣ የICT ማማከር፣ የሶፍትዌር ልማት)\n4. የንግድ ሚኒስቴር የኮሙኒኬሽን እቃዎች አስመጪነት ፈቃድ'
+                : 'Official Licenses & Accreditations:\n1. Ethiopian Communications Authority (ECA) Outdoor Telecom Installation & Maintenance License (Proclamation 1148/2019)\n2. Ethiopian Energy Authority (EEA) Electromechanical Contractor Grade-Five Competency Certificate (Proclamation 686/2010)\n3. Trade Bureau Licenses: Computer Network Design (Code 85121), ICT Consultancy (Code 86521), Software Development (Code 39141)\n4. Ministry of Trade: Telecom & Hardware Importation License.';
             return res.json({ reply: text, topic: 'licenses' });
         }
         // 10. Projects
